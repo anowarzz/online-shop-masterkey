@@ -1,28 +1,23 @@
+import { faLessThan } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 
-const ProductsList = () => {
-  // state to store the products form  server api
-
-  const [products, setProducts] = useState(null);
-
-  // fetching products from server
-
-  useEffect(() => {
-    fetch("https://api.hiring.masterkey.tech/api/v1/product/get")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setProducts(data);
-      });
-  }, []);
+const ProductsList = ({products,loading, setLoading}) => {
+  
 
   return (
     <div className="mt-8 px-8">
       <div className="grid gri-cols md:grid-cols-2 lg:grid-cols-3">
-        {products?.map((product) => (
-          <ProductCard key={product?._id}/>
-        ))}
+        {loading && (
+          <h3 className="text-center text-3xl font-bold"> Loading ....</h3>
+        )}
+
+        {products &&
+          products
+            ?.slice(0, 3)
+            .map((product) => (
+              <ProductCard product={product} key={product?._id} />
+            ))}
       </div>
     </div>
   );
