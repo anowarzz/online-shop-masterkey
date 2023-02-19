@@ -4,12 +4,12 @@ import MainHero from './MainHero';
 
 const HeroSection = () => {
     return (
-        <div className='grid grid-cols-5 mt-8'>
-            <div className='border shadow-lg col-span-3'>
+        <div className='flex my-10'>
+            <div className='shadow-md 5'>
             <MainHero />
             </div>
 
-            <div className='col-span-2'>
+            <div className=' border'>
 <p>Side card</p>
             </div>
         </div>

@@ -4,12 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        fontFamily: {
-          Podka: ["Podkova", "serif"],
-        },
+        fontFamily:  {
+          Podka : ["Podkova", "serif"],
+        }
+
       },
       colors: {
         primary: "#38FF4C",
+        secondary: "#07FFD2"
       },
     },
   },

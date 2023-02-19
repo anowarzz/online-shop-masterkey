@@ -1,39 +1,41 @@
-import React from 'react';
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import HeroImage from "../../assets/hero-image.png";
 
 const MainHero = () => {
-    return (
-        <div>
-            <div className="hero min-h-screen bg-base-200">
-  <div className="hero-content flex-col lg:flex-row-reverse">
-    <div className="text-center lg:text-left">
-      <h1 className="text-5xl font-bold">Login now!</h1>
-      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-    </div>
-    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-      <div className="card-body">
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Email</span>
-          </label>
-          <input type="text" placeholder="email" className="input input-bordered" />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Password</span>
-          </label>
-          <input type="text" placeholder="password" className="input input-bordered" />
-          <label className="label">
-          </label>
-        </div>
-        <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+  return (
+    <div>
+      <div className="">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          <div className="text-center lg:text-left">
+            <h1 className="text-2xl lg:text-3xl font-bold my-4">
+              Beats Studio3 Wireless Headphone
+            </h1>
+            <p>
+              <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+              <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+              <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+              <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+              <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
+              <span className="text-gray-400 pl-2">(200+ Reviews)</span>
+
+              <p className="text-secondary font-bold">Price : $450.55</p>
+            </p>
+            <p className="py-6">
+              Ergonomic or cupe with on-oor controls up to 22 hours of tening
+              time. Apple Wi crip & Closs{" "}
+            </p>
+          </div>
+          <div className="card flex-shrink-0 w-full max-w-sm">
+            <div className="card-body">
+              <img src={HeroImage} alt="" className="w-" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-        </div>
-    );
+  );
 };
 
 export default MainHero;
