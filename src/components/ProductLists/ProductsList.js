@@ -18,10 +18,10 @@ const ProductsList = () => {
   }, []);
 
   return (
-    <div className="mt-8 ">
+    <div className="mt-8 px-8">
       <div className="grid gri-cols md:grid-cols-2 lg:grid-cols-3">
         {products?.map((product) => (
-          <ProductCard />
+          <ProductCard key={product?._id}/>
         ))}
       </div>
     </div>
