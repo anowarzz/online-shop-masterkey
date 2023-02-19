@@ -50,7 +50,7 @@ const HomePage = () => {
     
         </div>
 
-            <div className="flex flex-cols">
+            <div className="flex flex-col">
               {products?.map((product) => <DailyDeals product={product}/>)}
             </div>
           </div>
