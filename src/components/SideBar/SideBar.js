@@ -20,7 +20,7 @@ import musicLogo from "../../assets/logo.png";
 const SideBar = () => {
   return (
     <div>
-      <div className="flex justify-start items-center gap-0 pl-4">
+      <div className="flex justify-center items-center gap-0 pl-4">
         <img src={musicLogo} className="h-8 " alt="logo" />
         <p className="mt-4 pl-8 text-xl md:text-2xl lg:text-3xl inline">
           MK Sounds
@@ -29,37 +29,37 @@ const SideBar = () => {
 
       <ul className="flex flex-col gap-8 pl-6 pt-8 font-bold">
         <li>
-          <Link>
+          <Link className="hover:bg-primary p-2">
             {" "}
             <FontAwesomeIcon icon={faHome} className="px-1" /> Home
           </Link>
         </li>
         <li>
-          <Link>
+          <Link className="hover:bg-primary p-2">
             {" "}
             <FontAwesomeIcon icon={faGlobe} /> Explore
           </Link>
         </li>
         <li>
-          <Link>
+          <Link className="hover:bg-primary p-2">
             {" "}
             <FontAwesomeIcon icon={faHeart} className="px-1" /> Saved
           </Link>
         </li>
         <li>
-          <Link>
+          <Link className="hover:bg-primary p-2">
             {" "}
             <FontAwesomeIcon icon={faCartShopping} className="px-1" /> Cart
           </Link>
         </li>
         <li>
-          <Link>
+          <Link className="hover:bg-primary p-2">
             {" "}
             <FontAwesomeIcon icon={faMoneyBill} className="px-1" /> Selling
           </Link>
         </li>
         <li>
-          <Link>
+          <Link className="hover:bg-primary p-2">
             {" "}
             <FontAwesomeIcon icon={faUser} className="px-1" /> Profile
           </Link>
@@ -71,13 +71,13 @@ const SideBar = () => {
           </Link>
         </li>
         <li>
-          <Link>
+          <Link className="hover:bg-primary p-2">
             {" "}
             <FontAwesomeIcon icon={faMessage} className="px-1" /> Contact Us
           </Link>
         </li>
         <li>
-          <Link>
+          <Link className="hover:bg-primary p-2">
             {" "}
             <FontAwesomeIcon icon={faGear} className="px-1" /> Setting
           </Link>
