@@ -26,11 +26,13 @@ const MainHero = () => {
        
                 <div className="bg-primary w-3 h-3 rounded-full">  </div>
                 <div className="bg-secondary w-3 h-3 rounded-full">  </div>
-                <div className="bg-primary w-3 h-3 rounded-full">  </div>
-                <div className="bg-primary w-3 h-3 rounded-full">  </div>
+                <div className="bg-info w-3 h-3 rounded-full">  </div>
+                <div className="bg-success outline w-3 h-3 rounded-full">  </div>
 
            </div>
-     
+     <div>
+        <button> <span>+</span> </button>
+     </div>
               </div>
 
               <p className="text-secondary font-bold">Price : $450.55</p>
