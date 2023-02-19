@@ -5,12 +5,12 @@ import SideBar from "../../components/SideBar/SideBar";
 
 const HomePage = () => {
   return (
-    <div className="grid grid-cols-8 gap-5">
+    <div className="grid grid-cols-8 gap-2">
       <div className="col-span-2 border-r-gray-300 border-4 border-y-transparent">
         <SideBar />
       </div>
 
-      <div className="col-span-5">
+      <div className="col-span-6 border">
         <Navbar />
 
         <HeroSection />

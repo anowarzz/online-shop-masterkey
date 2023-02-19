@@ -1,16 +1,21 @@
 import React from 'react';
 import Main from '../../Layout/Main';
 import MainHero from './MainHero';
-
+import './HeroSection.css'
+import Earphone from '../../assets/earphone.png'
+import HeadPhone from '../../assets/headphone.png'
 const HeroSection = () => {
     return (
-        <div className='flex my-10'>
-            <div className='shadow-md 5'>
+        <div className='grid grid-cols-8 gap-8 my-10'>
+            <div className='shadow-md col-span-6'>
             <MainHero />
             </div>
 
-            <div className=' border'>
-<p>Side card</p>
+            <div className='border feature-product col-span-2'>
+                <p className='text-lg text-white p-4'>Summer HeadPhones From Top Brands</p>
+                <img src={HeadPhone} alt="" />
+            <img src={Earphone} alt="" className='w-12'/>
+
             </div>
         </div>
     );

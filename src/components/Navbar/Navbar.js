@@ -20,9 +20,9 @@ const Navbar = () => {
             placeholder="Type here"
             className="input input-bordered input-accent w-full max-w-xs"
           />
-          <img src={Message} alt="" className="w-6" />
-          <img src={Customer} alt="" className="w-6" />
-          <img src={Alarm} alt="" className="w-6" />
+          <img src={Message} alt=""  className=" w-10 bg-primary p-2"/>
+          <img src={Customer} alt="" className=" w-10 bg-primary p-2" />
+          <img src={Alarm} alt="" className=" w-10 bg-primary p-2" />
         </div>
       </div>
     </nav>
