@@ -1,11 +1,25 @@
-import './App.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Main from "./Layout/Main";
+import HomePage from "./Pages/HomePage/HomePage";
 
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main />,
+      children: [
+        {
+          path: '/',
+          element: <HomePage />
+        }
+      ]
+    },
+  ]);
+
   return (
-    <div>
-      <h2 style={{textAlign:'center', marginTop: '20px', color: 'blueviolet', fontSize:'2em'}}>Hello World</h2>
-    </div>
+    <RouterProvider router={router}>
+    </RouterProvider>
   );
 }
 
